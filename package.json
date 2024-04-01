@@ -1,0 +1,17 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "Read me file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend/vite-project && npm run dev",
+    "backend": "cd backend && node --watch server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
